@@ -4,6 +4,9 @@ import App from "./app/App";
 import { BrowserRouter } from "react-router-dom";
 import { MantineProvider } from "@mantine/core";
 import { theme } from "./app/theme";
+import "./styles/main.css";
+import "@mantine/core/styles.css";
+
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
