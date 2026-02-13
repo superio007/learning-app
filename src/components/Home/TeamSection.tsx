@@ -69,7 +69,7 @@ const TeamSection = () => {
         <Container size="xl">
           <Stack gap={isMobile ? "80px" : "112px"}>
             <Stack gap={"12px"}>
-              <Text c="#96BB7C" fw={700} size="sm">
+              <Text c="#96BB7C" fw={700}>
                 Team
               </Text>
 

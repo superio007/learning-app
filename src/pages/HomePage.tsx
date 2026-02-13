@@ -1,6 +1,6 @@
 import { lazy, Suspense } from "react";
 const NewsLetter = lazy(() => import("../components/Home/NewsLetter"));
-// const HeroSection = lazy(() => import("../components/Home/HeroSection"));
+const HeroSection = lazy(() => import("../components/Home/HeroSection"));
 const PackagesSection = lazy(
   () => import("../components/Home/PackagesSection"),
 );
@@ -10,6 +10,9 @@ import FallbackLoader from "../components/UI/FallbackLoader";
 const HomePage = () => {
   return (
     <>
+      <Suspense fallback={<FallbackLoader />}>
+        <HeroSection />
+      </Suspense>
       <Suspense fallback={<FallbackLoader />}>
         <PackagesSection />
       </Suspense>
