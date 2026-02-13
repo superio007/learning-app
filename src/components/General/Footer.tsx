@@ -8,8 +8,14 @@ import {
   Anchor,
   Flex,
 } from "@mantine/core";
-
+import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 const Footer = () => {
+  const navigate = useNavigate();
+  const HandleScrollAndRedirect = (path: string) => {
+    scrollTo(0, 0);
+    navigate(path);
+  };
   return (
     <Box component="footer">
       {/* Main Section */}
@@ -23,17 +29,41 @@ const Footer = () => {
                   Company Info
                 </Text>
                 <Stack gap={8}>
-                  <Anchor c="#737373" fw={700} size="sm" underline="never">
+                  <Anchor
+                    onClick={() => HandleScrollAndRedirect("/about")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                    underline="never"
+                  >
                     About Us
                   </Anchor>
-                  <Anchor c="#737373" fw={700} size="sm" underline="never">
+                  <Anchor
+                    onClick={() => HandleScrollAndRedirect("/career")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                    underline="never"
+                  >
                     Career
                   </Anchor>
-                  <Anchor c="#737373" fw={700} size="sm" underline="never">
+                  <Anchor
+                    onClick={() => HandleScrollAndRedirect("/we-are-hiring")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                    underline="never"
+                  >
                     We are hiring
                   </Anchor>
-                  <Anchor c="#737373" fw={700} size="sm" underline="never">
-                    Blog
+                  <Anchor
+                    onClick={() => HandleScrollAndRedirect("/blogs")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                    underline="never"
+                  >
+                    Blogs
                   </Anchor>
                 </Stack>
               </Stack>
@@ -46,16 +76,40 @@ const Footer = () => {
                   Legal
                 </Text>
                 <Stack gap={8}>
-                  <Anchor c="#737373" fw={700} size="sm" underline="never">
+                  <Anchor
+                    onClick={() => HandleScrollAndRedirect("/privacy-policy")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                    underline="never"
+                  >
                     Privacy Policy
                   </Anchor>
-                  <Anchor c="#737373" fw={700} size="sm" underline="never">
+                  <Anchor
+                    onClick={() => HandleScrollAndRedirect("/terms-of-service")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                    underline="never"
+                  >
                     Terms of Service
                   </Anchor>
-                  <Anchor c="#737373" fw={700} size="sm" underline="never">
+                  <Anchor
+                    onClick={() => HandleScrollAndRedirect("/disclaimer")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                    underline="never"
+                  >
                     Disclaimer
                   </Anchor>
-                  <Anchor c="#737373" fw={700} size="sm" underline="never">
+                  <Anchor
+                    onClick={() => HandleScrollAndRedirect("/licenses")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                    underline="never"
+                  >
                     Licenses
                   </Anchor>
                 </Stack>
@@ -69,18 +123,46 @@ const Footer = () => {
                   Features
                 </Text>
                 <Stack gap={8}>
-                  <Text c="#737373" fw={700} size="sm">
+                  <Anchor
+                    onClick={() =>
+                      HandleScrollAndRedirect("/business-marketing")
+                    }
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                    underline="never"
+                  >
                     Business Marketing
-                  </Text>
-                  <Text c="#737373" fw={700} size="sm">
+                  </Anchor>
+                  <Anchor
+                    underline="never"
+                    onClick={() => HandleScrollAndRedirect("/user-analytics")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                  >
                     User Analytics
-                  </Text>
-                  <Text c="#737373" fw={700} size="sm">
+                  </Anchor>
+                  <Anchor
+                    underline="never"
+                    onClick={() => HandleScrollAndRedirect("/live-chat")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                  >
                     Live Chat
-                  </Text>
-                  <Text c="#737373" fw={700} size="sm">
+                  </Anchor>
+                  <Anchor
+                    underline="never"
+                    onClick={() =>
+                      HandleScrollAndRedirect("/unlimited-support")
+                    }
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                  >
                     Unlimited Support
-                  </Text>
+                  </Anchor>
                 </Stack>
               </Stack>
             </Grid.Col>
@@ -92,18 +174,44 @@ const Footer = () => {
                   Resources
                 </Text>
                 <Stack gap={8}>
-                  <Text c="#737373" fw={700} size="sm">
+                  <Anchor
+                    underline="never"
+                    onClick={() => HandleScrollAndRedirect("/ios-android")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                  >
                     iOS & Android
-                  </Text>
-                  <Text c="#737373" fw={700} size="sm">
+                  </Anchor>
+                  <Anchor
+                    underline="never"
+                    onClick={() => HandleScrollAndRedirect("/watch-demo")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                  >
                     Watch a Demo
-                  </Text>
-                  <Text c="#737373" fw={700} size="sm">
+                  </Anchor>
+                  <Anchor
+                    underline="never"
+                    onClick={() => HandleScrollAndRedirect("/customers")}
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                  >
                     Customers
-                  </Text>
-                  <Text c="#737373" fw={700} size="sm">
+                  </Anchor>
+                  <Anchor
+                    underline="never"
+                    onClick={() =>
+                      HandleScrollAndRedirect("/api-documentation")
+                    }
+                    c="#737373"
+                    fw={700}
+                    size="sm"
+                  >
                     API
-                  </Text>
+                  </Anchor>
                 </Stack>
               </Stack>
             </Grid.Col>
@@ -130,9 +238,16 @@ const Footer = () => {
                       />
                     </svg>
 
-                    <Text c="#737373" fw={700} size="sm">
+                    <Anchor
+                      underline="never"
+                      component={Link}
+                      to="tel:+14805550103"
+                      c="#737373"
+                      fw={700}
+                      size="sm"
+                    >
                       (480) 555-0103
-                    </Text>
+                    </Anchor>
                   </Group>
 
                   <Group display="flex" align="flex-start" gap="sm">
@@ -160,11 +275,11 @@ const Footer = () => {
                       </defs>
                     </svg>
 
-                    <Text c="#737373" fw={700} size="sm">
+                    <Anchor underline="never" c="#737373" fw={700} size="sm">
                       4517 Washington Ave.
                       <br />
                       Manchester, Kentucky 39495
-                    </Text>
+                    </Anchor>
                   </Group>
 
                   <Group display="flex" align="flex-start" gap="sm">
@@ -190,9 +305,16 @@ const Footer = () => {
                       </defs>
                     </svg>
 
-                    <Text c="#737373" fw={700} size="sm">
+                    <Anchor
+                      underline="never"
+                      component={Link}
+                      to="mailto:debra.holt@example.com"
+                      c="#737373"
+                      fw={700}
+                      size="sm"
+                    >
                       debra.holt@example.com
-                    </Text>
+                    </Anchor>
                   </Group>
                 </Stack>
               </Stack>

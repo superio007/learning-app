@@ -2,11 +2,14 @@
 
 import { Container, Title, Text, Button, Stack, Box } from "@mantine/core";
 import { IconArrowLeft } from "@tabler/icons-react";
+import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
   const navigate = useNavigate();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <Box bg="#fafafa">
       <Container

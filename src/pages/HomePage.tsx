@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { useEffect } from "react";
 const NewsLetter = lazy(() => import("../components/Home/NewsLetter"));
 const HeroSection = lazy(() => import("../components/Home/HeroSection"));
 const PackagesSection = lazy(
@@ -8,6 +9,9 @@ const TeamSection = lazy(() => import("../components/Home/TeamSection"));
 
 import FallbackLoader from "../components/UI/FallbackLoader";
 const HomePage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Suspense fallback={<FallbackLoader />}>
