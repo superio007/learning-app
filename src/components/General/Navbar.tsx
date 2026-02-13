@@ -25,7 +25,12 @@ const Navbar = () => {
         <Flex justify="space-between" align="center">
           {/* Logo */}
           <Link to="/">
-            <Image src={BrandName} alt="Brand logo" fit="contain" />
+            <Image
+              loading="lazy"
+              src={BrandName}
+              alt="Brand logo"
+              fit="contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -112,7 +117,12 @@ const Navbar = () => {
         size="100%"
         title={
           <Link to="/">
-            <Image src={BrandName} alt="Brand logo" fit="contain" />
+            <Image
+              src={BrandName}
+              loading="lazy"
+              alt="Brand logo"
+              fit="contain"
+            />
           </Link>
         }
       >

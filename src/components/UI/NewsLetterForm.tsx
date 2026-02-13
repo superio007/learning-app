@@ -14,7 +14,6 @@ const NewsLetterForm = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const onSubmit = (data: FormValues) => {
-    console.log("Form Data:", data);
     setIsSuccess(true);
     setTimeout(() => {
       setIsSuccess(false);
@@ -53,7 +52,7 @@ const NewsLetterForm = () => {
             radius="sm"
             size="md"
             style={{
-              backgroundColor: "#96BB7C",
+              backgroundColor: "#96BA7B",
               padding: "12px 18px",
               height: "52px",
               borderTopLeftRadius: 0,

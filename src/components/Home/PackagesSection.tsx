@@ -11,7 +11,7 @@ import { ChevronRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import type { Package } from "../../types/Packages";
 const Packages = () => {
-  const Packges: Package[] = [
+  const Packages: Package[] = [
     {
       image: "https://ik.imagekit.io/uh2wib2rn/Fin100X/012-blackboards.svg",
       title: "Certified Teacher",
@@ -44,12 +44,12 @@ const Packages = () => {
                 to="/packages"
                 variant="transparent"
                 fw={700}
-                c="#96BB7C"
+                c="#96BA7B"
                 p="0"
                 className="learn-btn"
                 rightSection={
                   <span className="learn-btn__arrow">
-                    <ChevronRight size={18} color="#96BB7C" />
+                    <ChevronRight size={18} color="#96BA7B" />
                   </span>
                 }
               >
@@ -57,7 +57,7 @@ const Packages = () => {
               </Button>
             </Stack>
             <Group gap={"15px"}>
-              {Packges.map((pkg: Package, index: number) => (
+              {Packages.map((pkg: Package, index: number) => (
                 <Box
                   key={index}
                   bg="#fff"
@@ -74,13 +74,13 @@ const Packages = () => {
                   }}
                 >
                   <Box
-                    bg="#96BB7C"
+                    bg="#96BA7B"
                     w="70px"
                     px="19px"
                     py="22px"
                     style={{ borderRadius: "10px" }}
                   >
-                    <img src={pkg.image} alt={pkg.title} />
+                    <img loading="lazy" src={pkg.image} alt={pkg.title} />
                   </Box>
                   <Title order={3} c="#252B42" fw={700} size="lg">
                     {pkg.title}

@@ -25,7 +25,7 @@ const HeroSection = () => {
         <Container size="xl">
           <Group style={{ display: "flex", gap: "60px" }}>
             <Stack gap={"35px"} style={{ zIndex: "50" }} align="start">
-              <Text c="#96BB7C" fw={700}>
+              <Text c="#96BA7B" fw={700}>
                 Welcome
               </Text>
 
@@ -73,7 +73,7 @@ const HeroSection = () => {
                       background: "#fdf3f1",
                       borderRadius: 5,
                       color: "#96BA7B",
-                      border: "1px solid #96BB7C",
+                      border: "1px solid #96BA7B",
                       textTransform: "uppercase",
                       display: "flex",
                       alignItems: "center",
@@ -89,6 +89,7 @@ const HeroSection = () => {
             <Image
               src={HeroImage}
               alt="Hero Image"
+              loading="lazy"
               style={{
                 position: isMobile ? "relative" : "absolute",
                 right: "0",

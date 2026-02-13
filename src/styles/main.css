@@ -4,7 +4,7 @@
 }
 
 .learn-btn {
-    color: #96BB7C;
+    color: #96BA7B;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -12,7 +12,7 @@
 }
 
 .learn-btn:hover {
-    color: #96BB7C;
+    color: #96BA7B;
 }
 
 .learn-btn__arrow {

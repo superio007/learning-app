@@ -1,15 +1,9 @@
-"use client";
-
 import { Container, Title, Text, Button, Stack, Box } from "@mantine/core";
-import { IconArrowLeft } from "@tabler/icons-react";
-import { useEffect } from "react";
+import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const NotFound = () => {
   const navigate = useNavigate();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <Box bg="#fafafa">
       <Container
@@ -43,7 +37,7 @@ const NotFound = () => {
 
           <Button
             size="md"
-            leftSection={<IconArrowLeft size={18} />}
+            leftSection={<ArrowLeft size={18} />}
             onClick={() => navigate("/")}
             bg="#96BA7B"
           >
