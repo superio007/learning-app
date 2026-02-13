@@ -11,14 +11,19 @@ const NewsLetterForm = () => {
     formState: { errors },
   } = useForm<FormValues>();
   const [isSuccess, setIsSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const isMobile = useMediaQuery("(max-width: 768px)");
 
   const onSubmit = (data: FormValues) => {
+    setIsLoading(true);
     setIsSuccess(true);
+    console.log("Form Data:", data);
     setTimeout(() => {
+      setIsLoading(false);
       setIsSuccess(false);
     }, 3000);
     reset();
+    setIsLoading(false);
   };
   return (
     <Box mt="md">
@@ -59,7 +64,7 @@ const NewsLetterForm = () => {
               borderBottomLeftRadius: 0,
             }}
           >
-            Subscribe
+            {isLoading ? "Subscribing..." : "Subscribe"}
           </Button>
         </Group>
         {isSuccess && (
