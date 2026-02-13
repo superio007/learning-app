@@ -1,1 +1,27 @@
 @import "tailwindcss";
+
+.arrow {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.learn-btn {
+    color: #96BB7C;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.learn-btn:hover {
+    color: #96BB7C;
+}
+
+.learn-btn__arrow {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.learn-btn:hover .learn-btn__arrow {
+    transform: translateX(5px);
+}
