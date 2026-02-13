@@ -2,10 +2,7 @@ import { Box, Group, TextInput, Button, Text } from "@mantine/core";
 import { useForm } from "react-hook-form";
 import { useState } from "react";
 import { useMediaQuery } from "@mantine/hooks";
-
-interface FormValues {
-  email: string;
-}
+import type { FormValues } from "../../types/NewsLetter";
 const NewsLetterForm = () => {
   const {
     register,
