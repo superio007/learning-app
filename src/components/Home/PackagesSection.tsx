@@ -25,7 +25,12 @@ const Packages = () => {
   ];
   return (
     <>
-      <Box bg="#FFF" px={{ base: 20, md: 40 }} py={{ base: 80, md: 160 }}>
+      <Box
+        bg="#FFF"
+        px={{ base: 20, md: 40 }}
+        py={{ base: 80, md: 160 }}
+        pb={0}
+      >
         <Container size="xl">
           <Group style={{ display: "flex", gap: "60px" }}>
             <Stack gap={"35px"} align="start">

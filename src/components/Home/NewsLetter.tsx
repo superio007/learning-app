@@ -1,16 +1,13 @@
 import { Box, Container, Stack, Text, Title } from "@mantine/core";
 import NewsLetterForm from "../UI/NewsLetterForm";
-import { useMediaQuery } from "@mantine/hooks";
 
 const NewsLetter = () => {
-  const isMobile = useMediaQuery("(max-width: 768px)");
   return (
     <Box
       bg="#FFF2F3"
       px={{ base: 20, md: 40 }}
       py={{ base: 40, md: 80 }}
       style={{
-        minHeight: isMobile ? "400px" : "594px",
         display: "flex",
         alignItems: "center",
       }}
