@@ -20,7 +20,7 @@ const Navbar = () => {
   const [opened, { toggle, close }] = useDisclosure(false);
 
   return (
-    <Box bg="#FDF3F1" px={{ base: 20, md: 40 }} py={{ base: 20, md: 10 }}>
+    <Box bg="#FDF3F1" px={{ base: 20, md: 180 }} py={{ base: 20, md: 10 }}>
       <Container size="xl">
         <Flex justify="space-between" align="center">
           {/* Logo */}

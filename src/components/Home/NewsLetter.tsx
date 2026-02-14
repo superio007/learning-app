@@ -14,7 +14,7 @@ const NewsLetter = () => {
     >
       <Container size="xl">
         <Stack gap="40px" align="center">
-          <Stack align="center" gap="12px">
+          <Stack align="center" gap="10px">
             <Text c="#96BA7B" fw={700}>
               Newsletter
             </Text>

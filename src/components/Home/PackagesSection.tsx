@@ -29,7 +29,7 @@ const Packages = () => {
         bg="#FFF"
         px={{ base: 20, md: 40 }}
         py={{ base: 80, md: 160 }}
-        pb={0}
+        pb={{ base: 0, md: 80 }}
       >
         <Container size="xl">
           <Group style={{ display: "flex", gap: "60px" }}>

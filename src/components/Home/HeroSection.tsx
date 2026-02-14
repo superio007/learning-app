@@ -24,7 +24,7 @@ const HeroSection = () => {
       >
         <Container size="xl">
           <Group style={{ display: "flex", gap: "60px" }}>
-            <Stack gap={"35px"} style={{ zIndex: "50" }} align="start">
+            <Stack gap={"30px"} style={{ zIndex: "50" }} align="start">
               <Text c="#96BA7B" fw={700}>
                 Welcome
               </Text>

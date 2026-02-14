@@ -62,13 +62,10 @@ const TeamSection = () => {
         bg="#FFF"
         px={{ base: 20, md: 40 }}
         py={{ base: 80, md: 112 }}
-        style={{
-          minHeight: isMobile ? "400px" : "849px",
-        }}
       >
         <Container size="xl">
           <Stack gap={isMobile ? "80px" : "112px"}>
-            <Stack gap={"12px"}>
+            <Stack gap={"10px"}>
               <Text c="#96BA7B" fw={700}>
                 Team
               </Text>
